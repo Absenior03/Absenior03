@@ -9,7 +9,7 @@ class prime
     ll=s.nextInt();
     System.out.print("Enter the upper: ");
     ul=s.nextInt();
-    for(int i=ll;i<=ul;i++)
+    for(int i=l;i<ul;i++)
     {
       if(isprime(i))
       {

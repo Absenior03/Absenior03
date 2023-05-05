@@ -7,7 +7,7 @@ class prime
     Scanner s=new Scanner(System.in);
     System.out.print("Enter the lower limit: ");
     ll=s.nextInt();
-    System.out.print("Enter the upper limit: ");
+    System.out.print("Enter the upper: ");
     ul=s.nextInt();
     for(int i=ll;i<=ul;i++)
     {

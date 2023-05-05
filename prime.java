@@ -1,3 +1,5 @@
+//learn github
+
 import java.util.*;
 class prime
 {
@@ -9,7 +11,7 @@ class prime
     ll=s.nextInt();
     System.out.print("Enter the upper: ");
     ul=s.nextInt();
-    for(int i=l;i<ul;i++)
+    for(int i=11;i<=ul;i++)
     {
       if(isprime(i))
       {

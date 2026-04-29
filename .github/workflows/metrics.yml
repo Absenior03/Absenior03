@@ -1,0 +1,32 @@
+name: Metrics
+on:
+  # This tells GitHub to refresh your stats automatically.
+  # "0 */12 * * *" is Cron syntax for "Every 12 hours".
+  schedule: [{cron: "0 */12 * * *"}]
+  
+  # This button appears in your "Actions" tab so you can update it instantly.
+  workflow_dispatch:
+
+  # Updates the dashboard whenever you edit your README.
+  push: {branches: ["master", "main"]}
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          # This connects to the secret token you created in Step 3.
+          token: ${{ secrets.METRICS_TOKEN }}
+          
+          # Customization Options:
+          user: Absenior03
+          template: classic
+          base: header, community, repositories, metadata
+          
+          # The Analytics Engines:
+          plugin_languages: yes          # Shows your top programming languages
+          plugin_languages_ignored: html, css # Hides languages you don't want to showcase
+          plugin_habits: yes             # Shows what time of day you code most
+          plugin_habits_charts: yes      # Turns those habits into a visual bar chart
+          plugin_lines: yes              # Shows how many lines of code you've written

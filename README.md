@@ -1,5 +1,5 @@
 ## Hi there 👋
-
+![My GitHub Metrics](https://github.com/Absenior03/Absenior03/blob/main/github-metrics.svg)
 <!--
 **Absenior03/Absenior03** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

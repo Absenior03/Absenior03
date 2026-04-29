@@ -16,14 +16,17 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Generate Metrics
+        uses: lowlighter/metrics@latest
         with:
-          # This connects to the secret token you created in Step 3.
           token: ${{ secrets.METRICS_TOKEN }}
           
           # Customization Options:
           user: Absenior03
-          template: classic
+          template: repository
           base: header, community, repositories, metadata
           
           # The Analytics Engines:

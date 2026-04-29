@@ -26,8 +26,11 @@ jobs:
           
           # Customization Options:
           user: Absenior03
-          template: repository
-          base: header, community, repositories, metadata
+          template: terminal
+          base: header, activity, repositories, metadata
+          config_timezone: Asia/Kolkata
+          config_twemoji: yes 
+          config_display: large
           
           # The Analytics Engines:
           plugin_languages: yes          # Shows your top programming languages
